@@ -1,5 +1,3 @@
-import styles from './FormattedTime.module.scss';
-
 const FormattedTime = ({ time }) => {
     const formatTime = (milliseconds) => {
         const ms = milliseconds % 1000;
@@ -13,7 +11,7 @@ const FormattedTime = ({ time }) => {
     };
 
     return (
-        <div className={styles.component}>
+        <div className={styles.components}>
             {formatTime(time)}
         </div>
     );

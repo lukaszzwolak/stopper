@@ -1,0 +1,33 @@
+@import './styles/settings.scss';
+
+.buttons {
+    margin-top: 30px;
+    text-align: center;
+
+    button {
+        background-color: $color-success;
+        color: $color-light;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 10px;
+        border: none;
+        border-radius: $radius;
+        cursor: pointer;
+        transition: $transition;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            background-color: darken($color-success, 10%);
+        }
+
+        &:active {
+            transform: scale(0.97);
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(38, 222, 129, 0.5);
+        }
+    }
+}
